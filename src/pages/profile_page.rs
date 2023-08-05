@@ -41,8 +41,8 @@ pub fn profile_page() -> Html {
     html! {
     <>
       <Header />
-      <section class="bg-ct-blue-600 min-h-screen pt-20">
-        <div class="max-w-4xl mx-auto bg-ct-dark-100 rounded-md h-[20rem] flex justify-center items-center">
+      <section class="bg-ct-wv-dark min-h-screen pt-20">
+        <div class="max-w-4xl mx-auto bg-ct-wv-white rounded-md h-[20rem] flex justify-center items-center">
           <div>
             <p class="text-5xl font-semibold">{"Profile Page"}</p>
             if let Some(user) = user {

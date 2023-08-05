@@ -56,11 +56,11 @@ pub fn header_component() -> Html {
                 <Link<Route> to={Route::ProfilePage} classes="text-ct-wv-yellow">{"Profile"}</Link<Route>>
               </li>
               <li
-                class="cursor-pointer"
+                class="cursor-pointer text-ct-wv-yellow"
               >
                 {"Create Post"}
               </li>
-              <li class="cursor-pointer" onclick={handle_logout}>
+              <li class="cursor-pointer text-ct-wv-yellow" onclick={handle_logout}>
                 {"Logout"}
               </li>
             </>

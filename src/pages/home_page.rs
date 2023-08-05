@@ -6,9 +6,9 @@ pub fn home_page() -> Html {
     html! {
       <>
         <Header />
-        <section class="bg-ct-blue-600 min-h-screen pt-20">
-            <div class="max-w-4xl mx-auto bg-ct-dark-100 rounded-md h-[20rem] flex justify-center items-center">
-                <p class="text-3xl font-semibold">{"Welcome to Rust sign in sign out demo!!"}</p>
+        <section class="bg-ct-wv-dark min-h-screen p-8">
+            <div class="max-w-4xl mx-auto bg-ct-wv-white rounded-md h-[20rem] flex justify-center items-center">
+                <p class="text-3xl text-ct-wv-dark-text font-semibold">{"Welcome!!"}</p>
             </div>
         </section>
       </>

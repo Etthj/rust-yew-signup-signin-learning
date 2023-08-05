@@ -149,9 +149,9 @@ pub fn login_page() -> Html {
     };
 
     html! {
-    <section class="bg-ct-blue-600 min-h-screen grid place-items-center">
+    <section class="bg-ct-wv-dark min-h-screen grid place-items-center">
       <div class="w-full">
-        <h1 class="text-4xl xl:text-6xl text-center font-[600] text-ct-yellow-600 mb-4">
+        <h1 class="text-4xl xl:text-6xl text-center font-[600] text-ct-wv-yellow mb-4">
           {"Welcome Back"}
         </h1>
         <h2 class="text-lg text-center mb-4 text-ct-dark-200">
@@ -159,7 +159,7 @@ pub fn login_page() -> Html {
         </h2>
           <form
             onsubmit={on_submit}
-            class="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-dark-200 rounded-2xl p-8 space-y-5"
+            class="max-w-md w-full mx-auto overflow-hidden shadow-lg bg-ct-wv-white rounded-2xl p-8 space-y-5"
           >
             <FormInput label="Email" name="email" input_type="email" input_ref={email_input_ref} handle_onchange={handle_email_input} errors={&*validation_errors} handle_on_input_blur={validate_input_on_blur.clone()} />
             <FormInput label="Password" name="password" input_type="password" input_ref={password_input_ref} handle_onchange={handle_password_input} errors={&*validation_errors} handle_on_input_blur={validate_input_on_blur.clone()}/>
@@ -171,7 +171,7 @@ pub fn login_page() -> Html {
             </div>
             <LoadingButton
               loading={store.page_loading}
-              text_color={Some("text-ct-blue-600".to_string())}
+              text_color={Some("text-ct-wv-white".to_string())}
             >
               {"Login"}
             </LoadingButton>
